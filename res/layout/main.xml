@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" ads:adUnitId="a14dfba0fc9666a"
+		ads:adSize="BANNER" ads:loadAdOnCreate="false" />
+
+	<TextView android:text="This is your Top Block:"
+		android:id="@+id/toptopblocktext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/FirstRowTable" android:visibility="visible">
+
+		<ImageView android:id="@+id/TopBlockImage"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:id="@+id/topdots" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+
+
+		<TextView android:text="Hold To Edit" android:id="@+id/TopItemCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	</TableRow>
+
+
+	<TextView android:text="Click A Sub-Block To Create A New Pyramid"
+		android:id="@+id/blocktext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Hold Down A Block to Select A New Color"
+		android:id="@+id/blocktwotext" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></TextView>
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/FirstRowTable" android:visibility="visible">
+
+		<ImageView android:id="@+id/ImageViewOne"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<Button android:id="@+id/dotsOne" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemOneCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+
+
+	</TableRow>
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/RowOneCheckBoxTable" android:visibility="visible">
+		<ImageView android:id="@+id/ImageViewTwo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			 />
+<Button android:id="@+id/dotsTwo" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemTwoCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/RowOnePTFIVECheckBoxTable" android:visibility="visible">
+		<ImageView android:id="@+id/ImageViewThree"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Button android:id="@+id/dotsThree" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemThreeCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/RowNewRowFour" android:visibility="visible">
+		<ImageView android:id="@+id/ImageViewFour"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Button android:id="@+id/dotsFour" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemFourCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/RowNewRowFive" android:visibility="visible">
+
+
+		<ImageView android:id="@+id/ImageViewFive"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Button android:id="@+id/dotsFive" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemFiveCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/RowNewRowSix" android:visibility="visible">
+		<ImageView android:id="@+id/ImageViewSix"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Button android:id="@+id/dotsSix" android:layout_height="50px"
+			android:layout_width="wrap_content" android:text="..." />
+		<CheckBox android:text="Hold To Edit" android:id="@+id/itemSixCheckBox"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+	</TableRow>
+
+
+
+	<TextView android:text="Jump To Another Pyramid:" android:id="@+id/pyramidtext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+	<Spinner android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/oldpyramids">
+	</Spinner>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/ButtonRowTable" android:visibility="visible"
+		android:layout_gravity="fill_horizontal|bottom">
+
+		<Button android:id="@+id/save" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Save Selected" />
+		<Button android:id="@+id/delete" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:enabled="false"
+			android:text="Delete Selected" />
+		<Button android:id="@+id/newrow" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:enabled="true"
+			android:text="New" />
+
+	</TableRow>
+
+
+
+</LinearLayout>
+</ScrollView>
